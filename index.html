@@ -1,262 +1,257 @@
 ---
 layout: landing
 ---
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<!-- Profile Image -->
-							<div class="image"> <img src="images/portrait2.png" alt="" style="marigin-bottom:28px" width="155px"></div> <br>
-							<!-- <div class="image"> <img src="images/pic05.jpg" alt="" style="marigin-bottom:28px" width="155px"></div> <br> -->
-							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
-							<!-- <ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
-							</ul> -->
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+		<!-- Profile Image -->
+		<div class="image"> <img src="images/portrait2.png" alt="" style="marigin-bottom:28px" width="155px"></div> <br>
+		<h2>{{ site.title }}</h2>
+		<p>{{ site.description | markdownify }}</p>
+		<!-- <ul class="actions">
+			<li><a href="#" class="button special">Activate</a></li>
+		</ul> -->
+	</div>
+	<a href="#one" class="more scrolly">Learn More</a>
+</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Hi there!</h2>
-								<p>My name is Gabriel and I gradutated with a B.S. in Computer Science from the University of San Francisco in May 2019.
-								 I am interested in creating practical, meaningful, and scalable solutions through software!</p>
-							</header>
-						</div>
-					</section>
+<!-- One -->
+<section id="one" class="wrapper style1 special">
+	<div class="inner">
+		<header class="major">
+			<h2>Hi there!</h2>
+			<p>I am a Full Stack Developer who specializes in React, Django, and Node. Although, I am always looking to learn about new technologies.</p>
+		</header>
+	</div>
+</section>
 
-					<!-- Experience -->
-					<section id="work" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Relevent Experience</h2>
-								<ul class="features">
-									<li style="width:100%">
-										<h3>Conventus Lending</h3>
-										<h1>Full Stack Developer</h1><br>
-										<h1>May 2019 - Present</h1>
-										<p>
-											I am involved across the stack creating/maintaining <u>Django</u> RESTful endpoints, <u>Node</u> microservices,
-											developing <u>React</u> components using tools such as <u>TypeScript</u> and <u>ES6</u>,
-											and keeping track of all live services using <u>GAE</u>.
+<!-- Experience -->
+<section id="work" class="wrapper style3 special">
+	<div class="inner">
+		<header class="major">
+			<h2>Relevent Experience</h2>
+			<ul class="features">
+				<li style="width:100%">
+					<h3>Conventus Lending</h3>
+					<h1>Full Stack Developer</h1><br>
+					<h1>May 2019 - June 2020</h1>
+					<p>
+						I am involved across the stack creating/maintaining Django RESTful endpoints, Node microservices, and React components.
+						Also, I have created two micro-services for critical system improvements.
+						One, a <u>Socket.io</u> <u>Node</u> service to update our React applications in real-time.
+						Another, a <u>gcloud</u> service for secure file upload/download.
+					</p>
+				</li>
+				<li style="width:100%">
+					<h3>JAKKS Pacific</h3> <br>
+					<h1>Full Stack Developer Intern</h1><br>
+					<h1>May 2018 - Aug 2018</h1>
+					<p>I participated in the team’s mission of improving the company’s
+						intranet website used by over 700 employees by engaging in scrum meetings,
+						creating solutions upon ticket submission, and executing frontend testing with <u>Selenium</u>.
+					</p>
+				</li>
+			</ul>
+		</header>
+	</div>
+</section>
 
-											Also, I have created two micro-services for critical system improvements.
-											One, a <u>Socket.io</u> <u>Node</u> service to update our React applications in real-time.
-											Another, a <u>gcloud</u> service for secure file upload/download.
-										</p>
-									</li>
-									<li style="width:100%">
-										<h3>JAKKS Pacific</h3> <br>
-										<h1>Full Stack Developer Intern</h1><br>
-										<h1>May 2018 - Aug 2018</h1>
-										<p>I participated in the team’s mission of improving the company’s
-											intranet website used by over 700 employees by engaging in scrum meetings,
-											creating solutions upon ticket submission, and executing frontend testing with <u>Selenium</u>.
-										</p>
-									</li>
-								</ul>
-							</header>
-						</div>
-					</section>
+<!-- Projects -->
+<section id="projects" class="wrapper alt style2">
+	<header class="major" align="center">
+		<h2 style="padding-top:1em">Projects</h2>
+	</header>
+	<section class="spotlight">
+		<div class="image">
+			<a href="https://unsplash.com/@jessedo81" target="_blank"><img src="images/projects/jesse-orrico-60373-unsplash.jpg" alt="" /></a>
+		</div><div class="content">
+			<h2>EEG Processing Web App</h2><br/>
+			<h1>Jan 2019 - May 2019</h1>
+			<p>Built a web application using <u>Python</u> & <u>Flask</u> to serve as an interface for researches to upload EEG files (scans of electrical
+				activity in the brain), see processed results, and to download those results. My key achievements include: creating a sound backend
+				to handle file pre-processing, refactoring and optimizing existing processing script, and creating a helper python script to connect
+				the processing script with <u>PostgreSQL</u> and an <u>AWS S3 Bucket</u>.</p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/projects/java_code.png" alt="" /></div>
+		<div class="content">
+			<h2>Multithreaded Search Engine</h2><br/>
+			<h1>Spring 2018</h1>
+			<p>Created a <u>Java</u> program which uses <u>multithreading</u> to crawl breadth-first through html files while using <u>Regex</u>
+				to parse words, then adding them to a <u>thread-safe nested data-structure</u>. Once populated, a word can be searched
+				(partially or exactly) and listed in order through the <u>Comparable class</u>. Ensured stability through <u>unit testing</u>.
+				<a href="https://github.com/GabrielCee27/Word_Search_Engine" target="_blank">Github Link</a></p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/projects/SQL_Snip2.png" alt="" /></div><div class="content">
+			<h2>Movie Database</h2> <br/>
+			<h1>Fall 2017</h1>
+			<p>Designed and built a <u>relational database</u> with <u>PostgreSQL</u> for movie data such as title, ratings, tags, etc. Used a <u>Python</u> script to preprocess the data.
+				Then, optimized the database with <u>indexing</u>. With the data loaded I can query questions such as: “Which movie had the most 5-star reviews?”</p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/projects/in_touch2.png" alt="" /></div><div class="content">
+			<h2> IOS Social/Chat App </h2> <br/>
+			<h1> Oct 2017 - May 2018</h1>
+			<p>Used <u>Swift</u>, <u>Xcode</u>, and <u>Firebase</u> (a non-relational database) to create an IOS application which featured user sign-up/login, user follow/unfollow, text posts to a feed,
+				and messaging.</p>
+		</div>
+	</section>
+	<section class="spotlight">
+		<div class="image"><img src="images/projects/shell.png" alt="" /></div>
+		<div class="content">
+			<h2> Custom Shell </h2><br/>
+			<h1> Fall 2018</h1>
+			<p> Used <u>C</u> and <u>system calls</u> to create a custom shell which featured a custom prompt, built-in commands, timing, I/O redirection through <u>Pipe</u>, background jobs through <u>Fork</u>, history execution,
+				and scripting. Tested on a <u>Raspberry Pi 3</u>.
+					<a href="https://github.com/GabrielCee27/OS_Shell" target="_blank">Github Link</a></p>
+		</div>
+	</section>
+</section>
 
-					<!-- Projects -->
-					<section id="projects" class="wrapper alt style2">
-						<header class="major" align="center">
-							<h2 style="padding-top:1em">Projects</h2>
-						</header>
-						<section class="spotlight">
-							<div class="image">
-								<a href="https://unsplash.com/@jessedo81" target="_blank"><img src="images/projects/jesse-orrico-60373-unsplash.jpg" alt="" /></a>
-							</div><div class="content">
-								<h2>EEG Processing Web App</h2><br/>
-								<h1>Jan 2019 - May 2019</h1>
-								<p>Built a web application using <u>Python</u> & <u>Flask</u> to serve as an interface for researches to upload EEG files (scans of electrical
-									activity in the brain), see processed results, and to download those results. My key achievements include: creating a sound backend
-									to handle file pre-processing, refactoring and optimizing existing processing script, and creating a helper python script to connect
-									the processing script with <u>PostgreSQL</u> and an <u>AWS S3 Bucket</u>.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/projects/java_code.png" alt="" /></div>
-							<div class="content">
-								<h2>Multithreaded Search Engine</h2><br/>
-								<h1>Spring 2018</h1>
-								<p>Created a <u>Java</u> program which uses <u>multithreading</u> to crawl breadth-first through html files while using <u>Regex</u>
-									to parse words, then adding them to a <u>thread-safe nested data-structure</u>. Once populated, a word can be searched
-									(partially or exactly) and listed in order through the <u>Comparable class</u>. Ensured stability through <u>unit testing</u>.
-									<a href="https://github.com/GabrielCee27/Word_Search_Engine" target="_blank">Github Link</a></p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/projects/SQL_Snip2.png" alt="" /></div><div class="content">
-								<h2>Movie Database</h2> <br/>
-								<h1>Fall 2017</h1>
-								<p>Designed and built a <u>relational database</u> with <u>PostgreSQL</u> for movie data such as title, ratings, tags, etc. Used a <u>Python</u> script to preprocess the data.
-									Then, optimized the database with <u>indexing</u>. With the data loaded I can query questions such as: “Which movie had the most 5-star reviews?”</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/projects/in_touch2.png" alt="" /></div><div class="content">
-								<h2> IOS Social/Chat App </h2> <br/>
-								<h1> Oct 2017 - May 2018</h1>
-								<p>Used <u>Swift</u>, <u>Xcode</u>, and <u>Firebase</u> (a non-relational database) to create an IOS application which featured user sign-up/login, user follow/unfollow, text posts to a feed,
-									and messaging.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/projects/shell.png" alt="" /></div>
-							<div class="content">
-								<h2> Custom Shell </h2><br/>
-								<h1> Fall 2018</h1>
-								<p> Used <u>C</u> and <u>system calls</u> to create a custom shell which featured a custom prompt, built-in commands, timing, I/O redirection through <u>Pipe</u>, background jobs through <u>Fork</u>, history execution,
-									and scripting. Tested on a <u>Raspberry Pi 3</u>.
-										<a href="https://github.com/GabrielCee27/OS_Shell" target="_blank">Github Link</a></p>
-							</div>
-						</section>
-					</section>
+<!-- Skills -->
+<section id="skills" class="wrapper style3 special">
+	<div class="inner">
+		<header class="major"><h2>Skills</h2></header>
+		<ul class="features">
+			<li class="icon fa-code">
+				<h3>Languages</h3>
+				<table>
+					<tr>
+						<td>JavaScript</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Python</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+							<i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Java</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>SQL</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Swift</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>HTML/CSS</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+				</table>
+			</li>
+			<li class="icon fa-laptop">
+				<h3>Frameworks & Libraries</h3>
+				<table>
+					<tr>
+						<td>Express.js</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Flask</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>React.js</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Django</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Socket.io</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Bootstrap</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+				</table>
 
-					<!-- Skills -->
-					<section id="skills" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major"><h2>Skills</h2></header>
-							<ul class="features">
-								<li class="icon fa-code">
-									<h3>Languages</h3>
-									<table>
-										<tr>
-											<td>JavaScript</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Python</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-												<i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Java</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>C</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>SQL</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Swift</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>HTML/CSS</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-									</table>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Frameworks & Libraries</h3>
-									<table>
-										<tr>
-											<td>Express.js</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Flask</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>React.js</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Django</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle-thin"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Socket.io</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Bootstrap</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-									</table>
+			</li>
+			<li class="icon fa-database">
+				<h3>Database Systems</h3>
+				<table>
+					<tr>
+						<td>PostgreSQL</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>Firebase</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"> <i class="icon fa-circle-thin"></i>
+							<i class="icon fa-circle-thin"></i></td>
+					</tr>
+					<tr>
+						<td>AWS S3</td>
+						<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"> <i class="icon fa-circle-thin"></i>
+						<i class="icon fa-circle-thin"></i></td>
+					</tr>
+				</table>
+			</li>
+			<li class="icon fa-desktop">
+				<h3>Tools & Environments</h3>
+				<table>
+					<tr>
+						<td>Unix OS</td>
+						<td>Github</td>
+					</tr>
+					<tr>
+						<td>Node.js</td>
+						<td>Eclipse</td>
+					</tr>
+					<tr>
+						<td>Xcode</td>
+						<td>Rstudio</td>
+					</tr>
+					<tr>
+						<td>AWS</td>
+						<td>GAE</td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+	</div>
+</section>
 
-								</li>
-								<li class="icon fa-database">
-									<h3>Database Systems</h3>
-									<table>
-										<tr>
-											<td>PostgreSQL</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>Firebase</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"> <i class="icon fa-circle-thin"></i>
-											 <i class="icon fa-circle-thin"></i></td>
-										</tr>
-										<tr>
-											<td>AWS S3</td>
-											<td><i class="icon fa-circle"></i> <i class="icon fa-circle"></i> <i class="icon fa-circle"> <i class="icon fa-circle-thin"></i>
-											<i class="icon fa-circle-thin"></i></td>
-										</tr>
-									</table>
-								</li>
-								<li class="icon fa-desktop">
-									<h3>Tools & Environments</h3>
-									<table>
-										<tr>
-											<td>Unix OS</td>
-											<td>Github</td>
-										</tr>
-										<tr>
-											<td>Node.js</td>
-											<td>Eclipse</td>
-										</tr>
-										<tr>
-											<td>Xcode</td>
-											<td>Rstudio</td>
-										</tr>
-										<tr>
-											<td>AWS</td>
-											<td>GAE</td>
-										</tr>
-									</table>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Let's Connect</h2>
-							</header>
-							<ul class="actions verticle">
-								<li><a href="http://www.linkedin.com/in/gabriel-cisneros" target="_blank" class="button fit special">LinkedIn</a></li>
-								<!-- <li><a href="#" class="button fit">Learn More</a></li> -->
-							</ul>
-							<!-- <ul class="icons major">
-								<li><span class="icon fa-file-alt major"></span></li>
-								<li><a href="www.linkedin.com/in/gabriel-cisneros" target="_blank"><span class="icon fa-linkedin major"></span></a></li>
-								<li><span class="icon fa-github major"></span></li>
-							</ul> -->
-						</div>
-					</section>
+<!-- CTA -->
+<section id="cta" class="wrapper style4">
+	<div class="inner">
+		<header>
+			<h2>Let's Connect</h2>
+		</header>
+		<ul class="actions verticle">
+			<li><a href="http://www.linkedin.com/in/gabriel-cisneros" target="_blank" class="button fit special">LinkedIn</a></li>
+			<!-- <li><a href="#" class="button fit">Learn More</a></li> -->
+		</ul>
+		<!-- <ul class="icons major">
+			<li><span class="icon fa-file-alt major"></span></li>
+			<li><a href="www.linkedin.com/in/gabriel-cisneros" target="_blank"><span class="icon fa-linkedin major"></span></a></li>
+			<li><span class="icon fa-github major"></span></li>
+		</ul> -->
+	</div>
+</section>
